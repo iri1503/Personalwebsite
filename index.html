@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Website</title>
+  <link rel="stylesheet" href="css/index.css">
+</head>
+</body>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        
+        <ul>
+          <li><a hfref="#header">Home</a></li>
+          <li><a hfref="#about">About</a></li>
+          <li><a hfref="#interests">Interests</a></li>
+          <li><a hfref="#education">Education</a></li>
+          <li><a hfref="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Student</p>
+        <h1>Hello!<br>Welcome to <br>My <span>Homepage.</span></h1>
+      </div>
+    </div>
+    <div class="images">
+      <img src="images/stack of books.png" alt="books" width="350" height="450">
+    </div>
+  </div>
+
+ <!-- -------------about--------------- --> 
+
+<div id="about">
+  <div class="container">
+    <div class="row">
+      <div class="about-col-1">
+      <img src="images/Profile.jpg" alt="Irdina" width="350" height="450">
+    </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p>Hello! Welcome to my personal Homepage! My name is Irdina Batrisya binti Uthman Khalaf. I turn 20 years old this year. This is where you will learn a few things about me. I have a veriety of interests that I do in my spare time. I am currently pursuing my Bachelor's Degree in Information Scince (Hons.) Library Management. And one of the many subjects I learn from this course is
+          IML470 (Web development) which is the subject I am creating this website for. 
+        </p>
+        <div class="tab-titles">
+          <p class="tab-links active-link" onclick="opentab('interests')">Interests</p>
+          <p class="tab-links" onclick="opentab('education')">Education</p>
+          <p class="tab-links" onclick="opentab('subjects')">Subjects</p>
+        </div>
+        <div class="tab-contents active-tab" id="interests">
+          <ul>
+            <li><span>Reading</span><br>Exploring the depths of literature and fiction.</li>
+            <li><span>Music</span><br>Varied genres and types of music.</li>
+            <li><span>Creative Writing</span><br>Expressing thoughts on paper.</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="education">
+          <ul>
+            <li><span>Secondary school</span><br>Attaining SPM certificate.</li>
+            <li><span>Foundation</span><br>Pre-university.</li>
+            <li><span>Degree</span><br>University</li>
+          </ul>
+        </div>
+        <div class="tab-contents" id="subjects">
+          <ul>
+            <li><span>IML470</span><br>Web Development</li>
+            <li><span>IML465</span><br>Digital Reference Services</li>
+            <li><span>IMC452</span><br>Introduction to Metadata</li>
+          </ul>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- -------------interests--------------- --> 
+
+<div id="interests">
+  <div class="container">
+    <h1 class="sub-title">My Interests</h1>
+    <div class="interest-list">
+      <div>
+        <h2>Reading</h2>
+        <p>I enjoy reading literature as well as fictional novels during my spare time.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <h2>Music</h2>
+        <p>I enjoy reading literature as well as fictional novels during my spare time.</p>
+        <a href="#">Learn more</a>
+      </div>
+      <div>
+        <h2>Creative Writing</h2>
+        <p>I enjoy reading literature as well as fictional novels during my spare time.</p>
+        <a href="#">Learn more</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<!-- -------------education--------------- --> 
+<div id="education">
+  <div class="container">
+  <h1 class="sub-title">My Education Journey</h1>
+  <div class="education-list">
+    <div class="education">
+      <img src="images/J4.jpg" alt="High School" width="470" height="300">
+      <div class="layer">
+        <h3>Secondary School</h3>
+        <p>Furthering my studies in secondary school</p>
+      </div>
+    </div>
+    <div class="education">
+      <img src="images/asasi 2.jpg" alt="Asasi" width="455" height="300">
+      <div class="layer">
+        <h3>Pre-University</h3>
+        <p>Furthering my studies in Foundation level in TESL</p>
+      </div>
+    </div>
+    <div class="education">
+      <img src="images/degree 1.jpg" alt="Degree" width="455" height="300">
+      <div class="layer">
+        <h3>Undergraduate Life</h3>
+        <p>Furthering my studies in Bachelor of Information Science (Hons.) Library Management. </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+<!-- -------------contact--------------- --> 
+ <div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1><span>Contact Me</span></h1>
+        <p><img src="images/google.png" alt="ws">2023699156@student.uitm.edu.my</p>
+        <p><img src="images/phone 2.png" alt="phone"></i>019-399 5377</p>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/irdina.ibeena?igsh=MWhwZXR6YjN2ZTdhMA=="><img src="images/instagram.png" alt="insta"></a>
+          <a href="https://wa.link/b8p6gi"><img src="images/whatsapp.png" alt="Whatsapp"></a>
+        </div>
+        
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Mesage"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>© 2024 Copyright:Irdina2024</p>
+  </div>
+ </div>
+
+
+<script>
+
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+function opentab(tabname){
+  for(tablink of tablinks){
+    tablink.classList.remove("active-link");
+  }
+  for(tabcontent of tabcontents){
+    tabcontent.classList.remove("active-tab");
+  }
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab")
+}
+
+</script>
+
+</body>
+</html>
